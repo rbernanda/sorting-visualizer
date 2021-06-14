@@ -1,9 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
 .array-container {
-  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  flex-wrap: wrap;
+  flex: auto;
 }
 
 .array-bar {
@@ -13,4 +36,77 @@
   text-align: center;
   color: #fff;
   padding: 10px 1px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #29293a;
+  display: flex;
+  padding: .5rem;
+  align-items: center;
+}
+
+.navbar__logo {
+  font-size: 2rem;
+  line-height: 1.2em;
+  flex: auto;
+  font-weight: 600;
+  margin-left: 3rem;
+  color: #fff;
+}
+
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-right: 3rem;
+}
+
+.bottom-menu-container {
+  height: 3rem;
+  background-color: #29293a;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  display: inline-block;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.shuffle, .play {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.play, .progress-bar-container {
+  margin-left: 1rem;
+}
+
+.progress-bar-container {
+  width: 20rem;
+  height: 2.2rem;
+  background-color: #fff;
+  border-radius: .1rem;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #B3E283;
+  max-width: 100%;
+}
+
+.fa, .fas {
+  font-size: 2.5em;
+  cursor: pointer;
 }

@@ -1,8 +1,12 @@
 import SortingVisualizer from './pages/SortingVisualizer'
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-    <SortingVisualizer />
+    <main className="wrapper">
+      <Navbar />
+      <SortingVisualizer />
+    </main>
   );
 }
 
